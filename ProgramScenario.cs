@@ -147,7 +147,10 @@ namespace Peergrade3
         private void MatrixMult()
         {
             var matrix = MethodsInput.ReadMatrix();
+
+            MethodsOutput.PrintLocalStringLine("ENTER_FRACTION");
             var fraction = MethodsInput.ReadFraction();
+
             var localizedMessage = LocalizationManager.getInstance().GetLocalizedValue("MULTIPLY");
 
             MethodsOutput.PrintStringLine(string.Format(resultFormatLine, localizedMessage));

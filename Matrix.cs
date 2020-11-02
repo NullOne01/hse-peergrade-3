@@ -303,12 +303,10 @@ namespace Peergrade3
                 throw new InvalidDataException(LocalizationManager.getInstance()
                     .GetLocalizedValue("SOLE_ROW_COL_WRONG_SIZE"));
 
-            var fractionListRes = new Fraction[ColCount() - 1];
+            Fraction[] fractionListRes = new Fraction[ColCount() - 1];
 
             Matrix matrixA = RemoveCol(ColCount() - 1);
             Fraction[] columnB = GetColumn(ColCount() - 1);
-
-            //xi * d = di
             Fraction detMatrixA = matrixA.Determinant();
 
             if (detMatrixA == 0)
@@ -319,6 +317,7 @@ namespace Peergrade3
 
             for (int i = 0; i < matrixA.ColCount(); i++)
             {
+                //xi * d = di.
                 fractionListRes[i] = matrixA.ReplaceCol(i, columnB).Determinant() / detMatrixA;
             }
 

@@ -59,7 +59,8 @@ namespace Peergrade3.Localization
                              "Write matrix (A|b) to solve SLOE, don't write symbol (|): "
             },
             {"MATRIX_WRONG", "Wrong matrix."},
-            {"MATRIX_TOO_BIG", "Matrix is too big."}
+            {"MATRIX_TOO_BIG", "Matrix is too big."},
+            {"ENTER_FRACTION", "Enter number or fraction: "}
         };
     }
 }
