@@ -6,8 +6,21 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Extensions" t="Include">
+        <e p="MathExtension.cs" t="Include" />
+        <e p="StringExtension.cs" t="Include" />
+      </e>
       <e p="Fraction.cs" t="Include" />
-      <e p="MathExtension.cs" t="Include" />
+      <e p="Localization" t="Include">
+        <e p="DefaultLocalization.cs" t="Include" />
+        <e p="LocalizationManager.cs" t="Include" />
+        <e p="RussianLocalization.cs" t="Include" />
+      </e>
+      <e p="Matrix.cs" t="Include" />
+      <e p="MethodsIO" t="Include">
+        <e p="MethodsInput.cs" t="Include" />
+        <e p="MethodsOutput.cs" t="Include" />
+      </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">
@@ -19,6 +32,7 @@
       <e p="Peergrade3.csproj" t="IncludeRecursive" />
       <e p="Peergrade3.sln" t="IncludeFlat" />
       <e p="Program.cs" t="Include" />
+      <e p="ProgramScenario.cs" t="Include" />
     </e>
   </component>
 </project>
